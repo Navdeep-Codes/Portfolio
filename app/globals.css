@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "easymde/dist/easymde.min.css";
+
+:root {
+  --background: #f8f6f0;
+  --foreground: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+pre {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.revealer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform-origin: center top;
+  background: #111;
+  pointer-events: none;
+  z-index: 99;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none !important;
+}
+
+::view-transition-group(root) {
+  z-index: auto !important;
+}
+
+::view-transition-image-pair(root) {
+  isolation: isolate;
+  will-change: clip-path;
+  z-index: 99999;
+}
+
+::view-transition-new(root) {
+  z-index: 2;
+  animation: none !important;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+  animation: none !important;
+}
+
+.explosion-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+}
+
+.explosion-container-img {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  width: 150px;
+  transform: translateX(-50%);
+  will-change: transform;
+  object-fit: cover;
+}
+
+.sticky img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.titles h1 {
+  text-transform: uppercase;
+  font-size: 12vw;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  will-change: transform;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+h1.title-1 {
+  color: #fa6c6c;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+h1.title-2 {
+  color: #10d0f4;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.titles {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 400vw;
+  height: 100vh;
+  display: flex;
+  will-change: transform;
+}
+
+.title {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250vw;
+  height: 250vw;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  z-index: -1;
+}
+
+.card {
+  position: absolute;
+  width: 500px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 16px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  background: white;
+}
+
+/* Add a class for WorkInfo to allow vertical scrolling if content overflows */
+.workinfo-section {
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
+  width: 100vw;
+  position: relative;
+}
+
+/* Add a class for PastTell to allow vertical scrolling if content overflows */
+.pasttell-section {
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
+  width: 100vw;
+  position: relative;
+}
+
+/* Do NOT change the default section styles for sticky/WorkTell */
