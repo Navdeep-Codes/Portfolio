@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const baseUrl =
-  process.env.NEXT_PUBLIC_BASE_URL || "https://portfolio2025-gules.vercel.app";
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.navdeepsingh.tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "I'm Navdeep, Building awesome stuff!",
     images: [
       {
-        url: "https://opengraph.b-cdn.net/production/images/5cee1368-220e-49f0-9e40-77a4441cdac4.png?token=eB4AYWeqak2MgfGZ9JksIA1z7_grB4tK5txx4Her2MM&height=634&width=1200&expires=33284633273",
+        url: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/ab1f0deb26e1187b2a3566763ea68b887ccde1d7_image.png",
         width: 1200,
         height: 634,
         alt: "Navdeep making awesome stuff",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description: "I'm Navdeep, Building awesome stuff!",
     images: [
       {
-        url: "https://opengraph.b-cdn.net/production/images/5cee1368-220e-49f0-9e40-77a4441cdac4.png?token=eB4AYWeqak2MgfGZ9JksIA1z7_grB4tK5txx4Her2MM&height=634&width=1200&expires=33284633273",
+        url: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/ab1f0deb26e1187b2a3566763ea68b887ccde1d7_image.png",
         alt: "Navdeep, Building awesome stuff!",
       },
     ],

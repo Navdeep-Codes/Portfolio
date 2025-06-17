@@ -6,7 +6,6 @@ import { ViewTransitions } from "next-view-transitions";
 import SmoothScroll from "./components/SmoothScroll";
 import { metadata as seoMetadata } from "./components/SEO";
 
-// Font configurations
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",

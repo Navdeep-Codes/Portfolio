@@ -49,10 +49,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  // Dynamic routes from Sanity content
   const dynamicRoutes = content
     .map((item: any) => {
-      // Determine the base path based on content type
       let basePath = "";
       switch (item._type) {
         case "research":
@@ -75,7 +73,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
       ];
 
-      // Add tag pages for research content
       if (item._type === "research" && item.tags) {
         item.tags.forEach((tag: string) => {
           routes.push({

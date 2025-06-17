@@ -48,7 +48,6 @@ export default function NewsletterPage() {
           const link = item.getElementsByTagName("link")[0]?.textContent || "";
           console.log("Checking item link:", link);
 
-          // Extract the slug from the URL
           const urlSlug = link.split("/p/")[1];
           console.log("Extracted URL slug:", urlSlug);
           console.log("Comparing with requested slug:", slug);
@@ -59,7 +58,6 @@ export default function NewsletterPage() {
               item.getElementsByTagName("content:encoded")[0]?.textContent ||
               "";
 
-            // Try to find a higher quality image in the content
             let highQualityImage: string | undefined = undefined;
             const imgMatch = content.match(/src="([^"]+)"/);
             if (imgMatch && imgMatch[1]) {
@@ -189,7 +187,6 @@ export default function NewsletterPage() {
         </article>
       </main>
 
-      {/* Floating Substack button */}
       <a
         href={post.link}
         target="_blank"

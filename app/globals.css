@@ -179,7 +179,6 @@ h1.title-2 {
   background: white;
 }
 
-/* Add a class for WorkInfo to allow vertical scrolling if content overflows */
 .workinfo-section {
   min-height: 100vh;
   height: auto;
@@ -188,7 +187,6 @@ h1.title-2 {
   position: relative;
 }
 
-/* Add a class for PastTell to allow vertical scrolling if content overflows */
 .pasttell-section {
   min-height: 100vh;
   height: auto;
@@ -197,4 +195,3 @@ h1.title-2 {
   position: relative;
 }
 
-/* Do NOT change the default section styles for sticky/WorkTell */

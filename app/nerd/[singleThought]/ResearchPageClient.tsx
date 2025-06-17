@@ -116,7 +116,6 @@ export default function ResearchPageClient({
                   </blockquote>
                 );
               },
-              // Make all links open in new tab
               a: ({ href, children, ...props }) => (
                 <a
                   href={href}
@@ -150,7 +149,6 @@ export default function ResearchPageClient({
                   </code>
                 );
               },
-              // Style task lists
               input: ({ type, checked, ...props }) => {
                 if (type === "checkbox") {
                   return (
