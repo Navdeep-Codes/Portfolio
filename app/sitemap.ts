@@ -10,7 +10,7 @@ const query = groq`*[_type in ["research", "work", "past"] && defined(slug.curre
   "tags": tags[]->name
 }`;
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.shrit.in";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.navdeepsingh.tech";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const content = await client.fetch(query);

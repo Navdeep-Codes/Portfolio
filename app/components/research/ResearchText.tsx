@@ -297,7 +297,7 @@ const ResearchText = ({
                 />
               </svg>
               <span className="text-xs md:text-sm text-white/80">
-                Shrit Shrivastava
+                 Navdeep Singh
               </span>
               <span className="text-xs md:text-sm text-white">•</span>
               <span className="text-xs md:text-sm text-white/80">India</span>

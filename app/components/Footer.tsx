@@ -78,7 +78,7 @@ const Footer = () => {
           <p className="text-center text-gray-300">
             Oh, if you wanna connect, send me a mail at{" "}
             <a
-              href="mailto:Shrit1401@gmail.com"
+              href="mailto:navdeep13dps@gmail.com"
               className="text-white underline hover:text-gray-300 transition-colors duration-300"
             >
               navdeep13dps@gmail.com

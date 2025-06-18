@@ -23,11 +23,11 @@ export async function generateMetadata({
   const imageUrl = urlFor(data.image).url();
 
   return {
-    title: data.title + " | Shrit",
+    title: data.title + " | Navdeep",
     description: data.description,
     openGraph: {
       title: data.title,
-      description: data.description + " | Shrit",
+      description: data.description + " | Navdeep",
       images: [
         {
           url: imageUrl,
@@ -42,7 +42,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: data.title,
-      description: data.description + " | Shrit",
+      description: data.description + " | Navdeep",
       images: [imageUrl],
     },
   };

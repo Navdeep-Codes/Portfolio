@@ -22,13 +22,13 @@ const MENU_ITEMS: MenuItem[] = [
     label: "YT",
     path: "",
     isExternal: true,
-    externalUrl: "https://www.youtube.com/@shippingshrit",
+    externalUrl: "https://www.youtube.com/@404Navdeep",
   },
   {
     label: "newsletter",
     path: "",
     isExternal: true,
-    externalUrl: "https://shrit.substack.com/",
+    externalUrl: "https://navdeep00.substack.com/",
   },
   { label: "Work", path: "/work" },
   { label: "Past", path: "/past" },
@@ -228,7 +228,7 @@ const Navbar: FC<NavbarProps> = ({ active }) => {
         onClick={handleNavigation("/")}
         className="logo text-3xl font-extrabold tracking-tight hover:font-normal transition-all duration-300"
       >
-        Shrit.
+        Navdeep.
       </a>
 
       <button

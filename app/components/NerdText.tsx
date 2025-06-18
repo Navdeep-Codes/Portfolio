@@ -289,7 +289,7 @@ const NerdText = () => {
                 />
               </svg>
               <span className="text-xs md:text-sm text-black/80">
-                Shrit Shrivastava
+                Navdeep Singh
               </span>
               <span className="text-xs md:text-sm text-gray-500">•</span>
               <span className="text-xs md:text-sm text-black/80">India</span>
