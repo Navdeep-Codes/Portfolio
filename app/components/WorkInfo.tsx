@@ -6,12 +6,12 @@ import { Work } from "../lib/types";
 import { urlFor } from "@/sanity/lib/image";
 
 const accentColors = [
-  "#7B3737", //  burgundy
-  "#6B46C1", // purple
-  "#3B4F1B",// olive
-  "#2C7A7B", // teal
-  "#B89B2B", //  ochre
-  "#E53E3E", // coral
+  "#7B3737", 
+  "#6B46C1", 
+  "#3B4F1B",
+  "#2C7A7B", 
+  "#B89B2B", 
+  "#E53E3E", 
 ];
 const shapes = ["triangle", "circle", "square"];
 

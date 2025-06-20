@@ -18,6 +18,9 @@ type MenuItem = {
 
 const MENU_ITEMS: MenuItem[] = [
   { label: "Home", path: "/" },
+  { label: "Work", path: "/work" },
+  { label: "Past", path: "/past" },
+  { label: "Nerd", path: "/nerd", subtext: "(Research)" },
   {
     label: "YT",
     path: "",
@@ -30,9 +33,6 @@ const MENU_ITEMS: MenuItem[] = [
     isExternal: true,
     externalUrl: "https://navdeep00.substack.com/",
   },
-  { label: "Work", path: "/work" },
-  { label: "Past", path: "/past" },
-  { label: "Nerd", path: "/nerd", subtext: "(Research)" },
 ];
 
 const ANIMATION_CONFIG = {

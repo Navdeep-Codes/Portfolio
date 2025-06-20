@@ -12,11 +12,11 @@ export default function Loader() {
   const [loadingText, setLoadingText] = useState("Brewing pixels...");
 
   const funnyTexts = [
-    "Brewing pixels...",
+    "Almost there... promise! 🤞",
+    "Final touches of brilliance ✨",    
     "Summoning creativity spirits 👻",
     "Charging design batteries 🔋",
-    "Almost there... promise! 🤞",
-    "Final touches of brilliance ✨",
+    "Brewing pixels...",
   ];
 
   useEffect(() => {

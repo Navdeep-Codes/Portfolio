@@ -8,29 +8,10 @@ const WorkTell = () => {
   const titlesContainerRef = useRef<HTMLDivElement>(null);
   const scrollTriggerRef = useRef<ScrollTrigger | null>(null);
 
-  const cardPositions = [
-    { top: "30%", left: "55%", text: "trophies" },
-    { top: "20%", left: "25%", text: "me dotty" },
-    { top: "50%", left: "10%", text: "a tree lol" },
-    { top: "60%", left: "40%", text: "my dog" },
-    { top: "30%", left: "30%", text: "dream to reality" },
-    { top: "60%", left: "60%", text: "i look cool" },
-    { top: "20%", left: "50%", text: "when i was popular" },
-    { top: "60%", left: "10%", text: "kiddos" },
-    { top: "20%", left: "40%", text: "it will be mine" },
-    { top: "45%", left: "55%", text: "sinisters" },
-  ];
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      gsap.set(card, {
-        z: -50000,
-        scale: 0,
-      });
-    });
+  
 
     const moveDist = window.innerWidth * 3;
     scrollTriggerRef.current = ScrollTrigger.create({
@@ -98,20 +79,6 @@ const WorkTell = () => {
           });
         });
 
-        cards.forEach((card, index) => {
-          const staggerOffset = index * 0.075;
-          const scaledProgress = (self.progress - staggerOffset) * 3;
-          const individualProgress = Math.max(0, Math.min(1, scaledProgress));
-          const targetZ = index === cards.length - 1 ? 1500 : 2000;
-          const newz = -50000 + (targetZ + 50000) * individualProgress;
-          const scaleProgress = Math.min(1, individualProgress * 10);
-          const scale = Math.max(0, Math.min(1, scaleProgress));
-
-          gsap.to(card, {
-            z: newz,
-            scale: scale,
-          });
-        });
       },
     });
 
@@ -163,27 +130,6 @@ const WorkTell = () => {
           </h1>
           <p className="text-sm text-gray-500 mt-1">– Steve Jobs</p>
         </div>
-      </div>
-      <div ref={imagesContainerRef} className="images">
-        {cardPositions.map((pos, index) => (
-          <div
-            key={index}
-            className={`card card-${index + 1}`}
-            style={{
-              top: pos.top,
-              left: pos.left,
-            }}
-          >
-            <div className="card-content">
-              <img
-                src={`/work/img-${index + 1}.jpeg`}
-                alt={`Card ${index + 1}`}
-                style={{ width: "100%", height: "auto" }}
-              />
-              <p className="card-text">{pos.text}</p>
-            </div>
-          </div>
-        ))}
       </div>
     </section>
   );
