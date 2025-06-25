@@ -64,8 +64,8 @@ const Footer = () => {
             </span>
           </nav>
           </div>
-      <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center gap-12">
-        <h1 className="text-[12vw] font-bold uppercase">Collaborate</h1>
+          <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center gap-12">
+          <h1 className="text-[12vw] font-bold uppercase">Collaborate</h1>
 
           <p className="text-center text-gray-300">
             If you wanna connect, send me a mail at{" "}
