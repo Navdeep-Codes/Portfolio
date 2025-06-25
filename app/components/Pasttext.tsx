@@ -356,3 +356,4 @@ duration: 20 + index * 5,
 };
 
 export default PastText;
+

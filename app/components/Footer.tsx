@@ -42,12 +42,43 @@ const Footer = () => {
 
   return (
     <footer className="relative w-full min-h-[75svh] text-white bg-[#111] color-white flex flex-col items-center justify-between py-12">
+      <div className="flex flex-col items-center gap-8 w-full">
+          <nav className="flex gap-8 items-center">
+            <span
+              onClick={handleNavigation("/nerd")}
+              className="hover:text-[#37517b] transition-colors duration-300"
+            >
+              Nerd
+            </span>
+            <span
+              onClick={handleNavigation("/work")}
+              className="hover:text-[#37517b] transition-colors duration-300"
+            >
+              Work
+            </span>
+            <span
+              onClick={handleNavigation("/past")}
+              className="hover:text-[#37517b] transition-colors duration-300"
+            >
+              Past
+            </span>
+          </nav>
+          </div>
       <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center gap-12">
         <h1 className="text-[12vw] font-bold uppercase">Collaborate</h1>
 
-        <div className="flex flex-col items-center gap-8 w-full">
-          <Newsletter className="w-full max-w-xl" />
+          <p className="text-center text-gray-300">
+            If you wanna connect, send me a mail at{" "}
+            <a
+              href="mailto:navdeep13dps@gmail.com"
+              className="text-white underline hover:text-gray-300 transition-colors duration-300"
+            >
+              navdeep13dps@gmail.com
+            </a>{" "}
+            or DM me on socials!
+          </p>
 
+        <div className="flex flex-col items-center gap-8 w-full">
           <div className="flex gap-8 items-center">
             <Link
               href="https://github.com/Navdeep-Codes"
@@ -75,37 +106,9 @@ const Footer = () => {
             </Link>
           </div>
 
-          <p className="text-center text-gray-300">
-            Oh, if you wanna connect, send me a mail at{" "}
-            <a
-              href="mailto:navdeep13dps@gmail.com"
-              className="text-white underline hover:text-gray-300 transition-colors duration-300"
-            >
-              navdeep13dps@gmail.com
-            </a>{" "}
-            or DM me on socials!
-          </p>
+          
 
-          <nav className="flex gap-8 items-center">
-            <span
-              onClick={handleNavigation("/nerd")}
-              className="hover:text-[#37517b] transition-colors duration-300"
-            >
-              Nerd
-            </span>
-            <span
-              onClick={handleNavigation("/work")}
-              className="hover:text-[#37517b] transition-colors duration-300"
-            >
-              Work
-            </span>
-            <span
-              onClick={handleNavigation("/past")}
-              className="hover:text-[#37517b] transition-colors duration-300"
-            >
-              Past
-            </span>
-          </nav>
+          
         </div>
 
         <div className="flex justify-between gap-4 text-sm text-gray-400">
