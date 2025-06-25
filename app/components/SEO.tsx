@@ -15,6 +15,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     description: "I'm Navdeep, Building awesome stuff!",
     images: [
       {
-        url: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/ab1f0deb26e1187b2a3566763ea68b887ccde1d7_image.png",
+        url: "https://navdeepsingh.tech/opengraph-image.png",
         width: 1200,
         height: 634,
         alt: "Navdeep making awesome stuff",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     description: "I'm Navdeep, Building awesome stuff!",
     images: [
       {
-        url: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/ab1f0deb26e1187b2a3566763ea68b887ccde1d7_image.png",
+        url: "https://navdeepsingh.tech/opengraph-image.png",
         alt: "Navdeep, Building awesome stuff!",
       },
     ],
