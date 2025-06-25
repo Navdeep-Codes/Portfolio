@@ -12,14 +12,14 @@ const COLORS = {
 } as const;
 
 const ANIMATION_DELAYS = {
-  initial: 400,
-  shapes: 4,
-  text: 4.5,
-  globe: 4,
-  bottom: 4.5,
-  dontClick: 4.7,
-  scrollDown: 4.9,
-  newsletter: 5,
+  initial: 2,
+  shapes: 2,
+  text: 2.5,
+  globe: 2,
+  bottom: 2,
+  dontClick: 2,
+  scrollDown: 2,
+  newsletter: 2,
 } as const;
 
 const TimeDisplay: FC = () => {

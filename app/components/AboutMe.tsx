@@ -17,9 +17,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const paragraphs = [
   "Hi! I'm Navdeep, a 11 year old coder and organizer from Kashmir, India. I create things that passion me.",
-  'since i was 7, computers and coding has been my main passion. It all started with playing games on a mobile phone and then dads laptop and now here on my laptop.',
-  'by the time i hit 9, computers became a dream, making a app, website anyuthing, was what I wanted to do. I discovered how to create basic websites, and that was it, i was addicted! from there, i started building websites, apps,, exploring anything i could create with a computer.',
-  'now at 11, my obsession with coding and creating hasn\'t slowed down it has gone even more up!. Making <a href="/work" class="text-[#37517b] underline">crazy stuff</a> is fun, but its not that rewarding an dwont get u hooked so here was my new finding <a href="https://hackclub.com" class="text-[#37517b] underline">Hack Club</a> its soo good and simple, code/make something get rewasrds for making it! They have different types of events like YSWS(You ship, We ship), Hackathons, Summer/Winter events and its all ran by teenagers under 18!! I also run one! Its called <a href="https://waffles.hackclub.com" class="text-[#37517b] underline">waffles</a>!!',
+  'since i was 7, computers and coding has been my main passion. It all started with playing games on a mobile phone and now here on my dads laptop.',
+  'by the time i hit 9, computers became a dream, making a app, website or anything, was what I wanted to do. I discovered how to create basic websites, and that was it, i was addicted! from there, i started building websites, apps, exploring anything i could create with a computer.',
+  'now at 11, my obsession with coding and creating hasn\'t slowed down it has gone even more up!. Making <a href="/work" class="text-[#37517b] underline">crazy stuff</a> is fun, but its not that rewarding and wont get u hooked',
+  'so i found <a href="https://hackclub.com" class="text-[#37517b] underline">Hack Club</a> its soo good and simple, code/make something get rewards for making it! They have different types of events like YSWS(You ship, We ship), Hackathons, Summer/Winter events and its all ran by teenagers under 18!! I also run one! Its called <a href="https://waffles.hackclub.com" class="text-[#37517b] underline">waffles</a>!!',
 ];
 
 const AboutMe = () => {
